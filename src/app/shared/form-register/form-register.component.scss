@@ -1,0 +1,33 @@
+@import '../../../assets/scss/rem-calc.scss';
+
+.form {
+    margin: 0 auto;
+    width: rem-calc(600);
+    padding: rem-calc(20);
+    border-radius: rem-calc(5);
+    background-color: var(--branco);
+    border: rem-calc(1) var(--cinza) solid;
+    box-shadow: 0 0 rem-calc(5) rgba($color: #262835, $alpha: .8);
+
+    &__group {
+        display: flex;
+        flex-direction: column;
+        line-height: rem-calc(30);
+        margin: rem-calc(20) auto;
+
+        input {
+            border-radius: rem-calc(5);
+            border: rem-calc(1) var(--cinza) solid;            
+
+            &:hover {               
+                box-shadow: 0 0 rem-calc(5) rgba($color: #0d6efd, $alpha: .8);
+            }
+
+            &::placeholder {
+                padding: rem-calc(10);
+                font-size: rem-calc(12);
+            }
+        }
+    }
+
+}
